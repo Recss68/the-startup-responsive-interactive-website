@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Font Name: Lato */
-/* 
+
+/* Custom Properties  */
+
+:root {
+
+    --main-background-color: #fff;
+    --main-color: #000;
+    --text-color: #fff;
+    --primary-color: #5814f4;
+    --weather-color:#f8ecfc;     
+    --900:#000; 
+    --400: #a09c9c;
+    --300: #c8c4c4;
+    --200: #e0dcdc;
+    --100: #f0ecec;
+    --50: #f8f4f4;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -10,10 +28,11 @@ body {
     margin: 0; 
     padding: 0; 
     overflow-x: hidden;
+    background-color: var(--main-background-color);
 }
 
 .logo {
-    color: white;
+    color: var(--text-color);
     padding: 10px 0 30px 10px;
 }
 
@@ -32,11 +51,11 @@ main {
     width: 100%;
     margin: 0;
     padding: 15px 15px 250px 15px;
-    background-color: #5814f4;
+    background-color: var(--primary-color);
 }
 
 .planner-intro {
-    color: white;
+    color: var(--text-color);
     padding: 15px;
     text-align: left;
 }
@@ -52,7 +71,7 @@ main {
 }
 
 .read-button {
-    color: white;
+    color: var(--text-color);
     font-weight: lighter;
     font-size: 15px;
     background: none;
@@ -60,16 +79,17 @@ main {
     text-decoration: underline;
 }
 
-.hidden {
-    display: none;
+details summary::before {
+    content: "Read More"; 
 }
 
-.visible {
-    display: block;
+details[open] summary::before {
+    content: "Read Less"; 
 }
+
 
 .days-section {
-    background-color: #f8f4f4;
+    background-color: var(--50);
     padding: 20px 20px 20px 20px;
 }
 
@@ -92,20 +112,43 @@ main {
     text-align: center;
     width: 100%;
     height: 50px;
-    border: 1px solid #000;
+    border: 1px solid var(--main-color);
     border-radius: 40px;
     margin-bottom: 20px;
 }
 
 .mail-input::placeholder {
-    color: black;
+    color: var(--main-color);
 }
 
 .submit {
     width: 100%;
     height: 50px;
     border-radius: 40px;
-    background-color: black;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--text-color);
     font-weight: bold;
-} */
+}
+
+.degree-info {
+    background-color: var(--weather-color);
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.degree-info h2{
+    font-size: 80px;
+    line-height: 0.2;
+}
+
+.activities {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding-top: 450px;
+    padding-bottom: 450px;
+    text-align: center;
+}
