@@ -33,7 +33,7 @@ body {
 
 .logo {
     color: var(--text-color);
-    padding: 10px 0 30px 10px;
+    padding: 40px 15px 30px 25px;
 }
 
 .logo svg {
@@ -47,17 +47,19 @@ main {
     padding: 0;
 }
 
-.hero-container {
-    width: 100%;
-    margin: 0;
-    padding: 15px 15px 200px 15px;
+
+header {
     background-color: var(--primary-color);
 }
 
 .planner-intro {
     color: var(--text-color);
-    padding: 15px;
+    /* padding: 15px; */
     text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 40px 15px 120px 26px;
+    background-color: var(--primary-color);
 }
 
 .planner-intro h1 {
@@ -79,13 +81,13 @@ main {
     text-decoration: underline;
 }
 
-details summary::before {
-    content: "Read More"; 
-}
-
-details[open] summary::before {
-    content: "Read Less"; 
-}
+details summary::after {
+    content: "Read More";
+  }
+  
+  details[open] summary::after {
+    content: "Read Less";
+  }
 
 
 .days-section {
@@ -102,10 +104,6 @@ details[open] summary::before {
     display: grid;
     grid-auto-flow: column; 
     list-style: none; 
-}
-
-.days-container {
-    padding-bottom: 30px;
 }
 
 .mail-input {
