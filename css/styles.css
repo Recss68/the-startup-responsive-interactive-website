@@ -50,7 +50,7 @@ main {
 .hero-container {
     width: 100%;
     margin: 0;
-    padding: 15px 15px 250px 15px;
+    padding: 15px 15px 200px 15px;
     background-color: var(--primary-color);
 }
 
@@ -145,6 +145,12 @@ details[open] summary::before {
 .activities {
     padding: 20px;
 }
+
+hr {
+    color: gray;
+    opacity: 20%;
+}
+
 
 footer {
     background-color: var(--main-color);
