@@ -6,7 +6,6 @@
     <title>DEPT - Weather Planner</title>
     <link rel="icon" type="image/x-icon" href="img/dept.svg">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/functions.js"></script>
 </head>
 <body>
     <section class="parent"> 
@@ -120,6 +119,19 @@
             <img src="img/swimming.png">
             <h3>Swimming</h3>
             <p>In recreation and sports, the propulsion of the body through water by combined arm and leg motions.</p>
+
+            <button class="open-button"><img src="img/polygon.png" alt="polygon"></button>
+            <dialog class="modal" id="modal"> 
+                <button class="close-button">Close</button>
+                <br>
+                <img src="img/swimming.png" alt="swimming">
+                <h1>Swimming</h1>
+                <span>You can do this event</span>
+                <h2>You can do this activity between 22° and 44° in Amsterdam</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum quis dolore facilis. Dicta, porro.</p>
+                <button>View event</button>
+            </dialog>
+
         </article>
         <hr>
         <article>
@@ -166,5 +178,7 @@
     <footer>
         <img src="img/deptxfdnd.png" alt="footerlogo">
     </footer>
+
+    <script src="js/functions.js" defer></script>
 </body>
 </html>
